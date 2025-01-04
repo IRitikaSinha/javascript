@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>cricket game</title>
+  <style>
+    body{
+    text-align: center;
+      
+
+h1{
+  background-color: green;
+text-transform: uppercase;
+}
+.bat{
+  width: 510px;
+  height: 140px;
+background-color: bisque;
+  border-radius: 2px;
+
+}
+.ball{
+  width: 510px;
+  height: 140px;
+  background-color: bisque;
+}
+.stump{
+  width: 510px;
+  height: 140px;
+  background-color: bisque;
+  border-radius: 2px;
+
+}
+img{
+  border: 3px solid;
+}
+
+.full_page{
+  background-color: purple;
+  border: 5px solid;
+}
+
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="full_page">
+
+    <h1>Bat Ball Stump Game</h1>
+  
+    <hr>
+    <img src="bat.png" width="510" height="700" title="bat" alt="Error" />
+    <img src="ball.png" width="510" height="700" title="ball" alt="Error" />
+    <img src="stump.png" width="510" height="700" title="stump" alt="Error" />
+  <br>
+    <button class="bat"  onclick="
+    //console.log('you have choosen bat') ; //one way
+    //onether way to write
+  //const userChoiceMsg ='you have choosen bat'; 
+  
+    let computerchoice;
+    let randomNumber = Math.random() * 3;
+    if (randomNumber >0 && randomNumber<= 1){
+    computerchoice = 'bat';
+    //  console.log('computer choice is bat');
+  
+    }
+    else if (randomNumber >1 && randomNumber<= 2){
+    computerchoice = 'ball';
+    //  console.log('computer choice is ball');
+    }
+    else{
+    computerchoice = 'stump';
+    //  console.log('computer choice is stump');
+    }
+  //console.log(`computer choice is ${computerchoice}`)
+  //const computerChoiceMsg = `computer choice is ${computerchoice}`;
+  
+    let resultMsg;
+  if (computerchoice === 'ball'){
+    resultMsg ='user won';
+  }
+  else if (computerchoice ==='bat'){
+    resultMsg= `it's a tie`;
+  }
+  else{
+    resultMsg ='computer won';
+  }
+  
+  alert(`'you have choosen bat' ,computer choice is ${computerchoice} , ${ resultMsg}`);
+  "> <h2> bat</h2>
+  </button>
+  
+  
+    <button class="ball"onclick="
+    //console.log('you have choosen bat') ; //one way
+    //onether way to write
+  //const userChoiceMsg ='you have choosen bat'; 
+  
+    let computerchoice;
+    let randomNumber = Math.random() * 3;
+    if (randomNumber >0 && randomNumber<= 1){
+    computerchoice = 'bat';
+    //  console.log('computer choice is bat');
+  
+    }
+    else if (randomNumber >1 && randomNumber<= 2){
+    computerchoice = 'ball';
+    //  console.log('computer choice is ball');
+    }
+    else{
+    computerchoice = 'stump';
+    //  console.log('computer choice is stump');
+    }
+  //console.log(`computer choice is ${computerchoice}`)
+  //const computerChoiceMsg = `computer choice is ${computerchoice}`;
+  
+    let resultMsg;
+  if (computerchoice === 'ball'){
+    resultMsg =`it's a tie`;
+  }
+  else if (computerchoice ==='bat'){
+    resultMsg= 'user won';
+  }
+  else{
+    resultMsg ='computer won';
+  }
+  
+  alert(`'you have choosen ball' ,computer choice is ${computerchoice} , ${ resultMsg}`);
+  "><h2> ball</h2></button>
+    <button class="stump"onclick="
+    //console.log('you have choosen bat') ; //one way
+    //onether way to write
+  //const userChoiceMsg ='you have choosen bat'; 
+  
+    let computerchoice;
+    let randomNumber = Math.random() * 3;
+    if (randomNumber >0 && randomNumber<= 1){
+    computerchoice = 'bat';
+    //  console.log('computer choice is bat');
+  
+    }
+    else if (randomNumber >1 && randomNumber<= 2){
+    computerchoice = 'ball';
+    //  console.log('computer choice is ball');
+    }
+    else{
+    computerchoice = 'stump';
+    //  console.log('computer choice is stump');
+    }
+  //console.log(`computer choice is ${computerchoice}`)
+  //const computerChoiceMsg = `computer choice is ${computerchoice}`;
+  
+    let resultMsg;
+  if (computerchoice === 'Stump'){
+    resultMsg =`it's a tie`;
+  }
+  else if (computerchoice ==='bat'){
+    resultMsg= `computer won`;
+  }
+  else{
+    resultMsg ='user won';
+  }
+  
+  alert(`'you have choosen stump' ,computer choice is ${computerchoice} , ${ resultMsg}`);
+  "><h2> stump</h2></button>
+
+  </div>
+
+
+</body>
+</html>
