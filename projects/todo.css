@@ -1,10 +1,22 @@
 
 body {
   font-family: Arial;
+margin-top: 20px;
+
+
+}
+
+#page{
+  background-color: antiquewhite;
+  text-align: center;
+  border: 3px black solid;
 }
 
 #main-heading {
   text-align: center;
+  background-color: bisque;
+  border: 20px beige solid;
+
 }
 
 .grid-container {
@@ -12,8 +24,9 @@ body {
   grid-template-columns: 200px 150px 100px;
   column-gap: 10px;
   row-gap: 10px;
-  margin-top: 10px;
+  margin: 10px 35% ;
   align-items: center;
+
 }
 
 #todo-input, #todo-date {
